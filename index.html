@@ -21,9 +21,8 @@
 
 		<!-- HEADER -->
 		<ul class="header-links">
-			<li>About</li>
+			<li><a href="#">About</a></li>
 			<li><a href="#examples">Examples</a></li>
-			<li>Download</li>
 			<li>Documentation</li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
@@ -67,13 +66,13 @@
 		age <span class="code-orange">=</span> _age
 
 	<span class="code-violet">func</span> <span class="code-red">str</span>
-		<span class="code-violet">return</span> <span class="code-green">f"{username}, {age.str()}"</span>
+		<span class="code-violet">return</span> <span class="code-green">'{username} is {age}yo'</span>
 
 <span class="code-violet">func</span> <span class="code-red">main</span>
-	<span class="code-violet">let</span> people:<span class="code-grey">list&lt;user&gt;</span>
-	<span class="code-violet">for</span> i <span class="code-violet">in</span> <span class="code-blue">range</span>(<span class="code-orange">0</span>, <span class="code-orange">5</span>)
+	<span class="code-violet">let</span> people <span class="code-red">=</span> <span class="code-violet">new</span> <span class="code-grey">list&lt;user&gt;</span>
+	<span class="code-violet">for</span> i <span class="code-violet">from</span> <span class="code-orange">0</span> <span class="code-violet">to</span> <span class="code-orange">5</span>
 		people.<span class="code-blue">add</span>(<span class="code-violet">new</span> <span class="code-blue">user</span>(<span class="code-green">"Bob"</span>, <span class="code-blue">randint</span>(<span class="code-orange">1</span>, <span class="code-orange">99</span>)))
-		<span class="code-blue">puts</span>(people[people.count <span class="code-orange">-</span> <span class="code-orange">1</span>])</code></pre>
+		<span class="code-blue">puts</span>(people[<span class="code-orange">-1</span>].<span class="code-blue">str</span>())</code></pre>
 			</div>
 
 		</div>
@@ -85,9 +84,7 @@
 		
 		<h1>Free & <span class="text-green-gradient">Open</span> sources</h1>
 		<p>
-			Lim is created with an open source philosophy, so free is obvious.
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda vero doloribus rerum minima placeat? Neque sed modi molestias perferendis reprehenderit ea culpa, veritatis ad aliquam praesentium maiores blanditiis, ducimus commodi!
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae velit provident quia optio temporibus nihil assumenda illo corrupti placeat laboriosam fugiat, odit eveniet, distinctio doloribus. Rerum dolorem repellat impedit.
+			Lim is based on the principle of open source, meaning that its source code is accessible and modifiable by all. This logical choice encourages collaboration, innovation and transparency in language development. Open source also gives Lim users the opportunity to correct and improve it.
 		</p>
 
 	</section>
@@ -156,8 +153,7 @@
 		
 		<h1>Designed for <span class="text-green-gradient">minimal</span> runtime</h1>
 		<p>
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda vero doloribus rerum minima placeat? Neque sed modi molestias perferendis reprehenderit ea culpa, veritatis ad aliquam praesentium maiores blanditiis, ducimus commodi!
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae velit provident quia optio temporibus nihil assumenda illo corrupti placeat laboriosam fugiat, odit eveniet, distinctio doloribus. Rerum dolorem repellat impedit.
+			Lim is a programming language designed to simplify the integration of high-level functionality. It uses classes that are equivalent to C structures, without adding complexity. It also features a lazy compiler that compiles only what is necessary.
 		</p>
 
 	</section>
@@ -182,9 +178,6 @@
 
 <span class="code-darkgreen">//Imports the window library</span>
 <span class="code-red">import</span> window
-
-<span class="code-darkgreen">//Import the copy function from the "../clipboard.lim" file</span>
-<span class="code-red">import</span> copy <span class="code-red">from</span> <span class="code-green">"../clipboard.lim"</span>
 </pre></code>
 			</div>
 
@@ -228,7 +221,7 @@
 		elements.<span class="code-blue">add</span>(elm)
 
 	<span class="code-violet">func</span> <span class="code-red">remove</span><span class="code-grey">:T</span>
-		<span class="code-red">return</span> elements.<span class="code-blue">removeAt</span>(<span class="code-orange">-1</span>)</pre></code>
+		<span class="code-red">return</span> elements.<span class="code-blue">remove</span>(<span class="code-orange">-1</span>)</pre></code>
 				</div>
 
 		</div>
@@ -240,8 +233,7 @@
 		
 		<h1>No need to manage <span class="text-green-gradient">memory</span></h1>
 		<p>
-			Garbage Collector Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda vero doloribus rerum minima placeat? Neque sed modi molestias perferendis reprehenderit ea culpa, veritatis ad aliquam praesentium maiores blanditiis, ducimus commodi!
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae velit provident quia optio temporibus nihil assumenda illo corrupti placeat laboriosam fugiat, odit eveniet, distinctio doloribus. Rerum dolorem repellat impedit.
+			Lim uses a garbage collector, an automatic memory management mechanism that frees memory occupied by unused or inaccessible objects in a computer program. The garbage collector allows developers to concentrate on program logic without worrying about memory allocation and deallocation.
 		</p>
 
 	</section>
@@ -251,8 +243,7 @@
 		
 		<h1>How does it <span class="text-green-gradient">work</span> ?</h1>
 		<p>
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda vero doloribus rerum minima placeat? Neque sed modi molestias perferendis reprehenderit ea culpa, veritatis ad aliquam praesentium maiores blanditiis, ducimus commodi!
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae velit provident quia optio temporibus nihil assumenda illo corrupti placeat laboriosam fugiat, odit eveniet, distinctio doloribus. Rerum dolorem repellat impedit.
+			The Lim programming language has the unique feature of converting its source code into a C file, which can then be compiled into an independent executable file. This allows Lim to be compatible with any operating system and to take advantage of the functionalities of existing C libraries.
 		</p>
 		<div class="how-it-works-schema">
 			<img src="images/file.png" alt="Lim file icon">
@@ -262,8 +253,7 @@
 			<img src="images/executable.png" alt="Executable file icon">
 		</div>
 		<p>
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda vero doloribus rerum minima placeat? Neque sed modi molestias perferendis reprehenderit ea culpa, veritatis ad aliquam praesentium maiores blanditiis, ducimus commodi!
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae velit provident quia optio temporibus nihil assumenda illo corrupti placeat laboriosam fugiat, odit eveniet, distinctio doloribus. Rerum dolorem repellat impedit.
+			For example, Lim can use the SDL2 library to create games or graphics applications. Lim can also optimize the C code it generates using the optimization mode of the chosen C compiler. In this way, Lim guarantees high-performance results.
 		</p>
 
 	</section>
@@ -273,8 +263,7 @@
 		
 		<h1>Execute <span class="text-green-gradient">C code</span> in lim code</h1>
 		<p>
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda quaerat consectetur maiores unde sunt laborum corrupti esse voluptatum, facere ea dolorum eum repudiandae, ipsum dolores et est dignissimos eos ipsa.
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laboriosam iste inventore nostrum facilis atque! Vel rerum reprehenderit dolores, corporis, quasi quam quo quos obcaecati cupiditate nisi, modi maxime incidunt.
+			Lim is a programming language that lets you integrate C source code into your programs. The syntax allows C code to be inserted at a specific point in the source code and compiled with the rest of the program. This feature can be useful for using libraries written in C, for optimizing certain parts of the code or for taking advantage of features specific to the C language.
 		</p>
 		
 	</div>

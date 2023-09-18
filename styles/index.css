@@ -196,7 +196,7 @@ p{
 .free{
 	width: 100%;
 
-	padding: 10%;
+	padding: 10% 20%;
 
 	background-color: rgb(20, 20, 20);
 }
@@ -210,13 +210,14 @@ p{
 @media (max-width:720px) {
 	.free{
 		text-align: center;
+		padding: 10%;
 	}
 }
 
 /* EXEMPLES */
 .exemples{
 	width: 100%;
-	padding: 10%;
+	padding: 10% 20%;
 	background-color: white;
 }
 .exemple-cell{
@@ -269,13 +270,16 @@ p{
 	.exemples h1{
 		text-align: center;
 	}
+	.exemples{
+		padding: 10%;
+	}
 }
 
 /* COMPILE TO C WITH MINIMAL RUNTIME */
 .compiler{
 	width: 100%;
 
-	padding: 10%;
+	padding: 10% 20%;
 
 	background-color: rgb(20, 20, 20);
 }
@@ -289,6 +293,7 @@ p{
 @media (max-width:720px) {
 	.compiler{
 		text-align: center;
+		padding: 10%;
 	}
 }
 
@@ -296,7 +301,7 @@ p{
 .gc{
 	width: 100%;
 
-	padding: 10%;
+	padding: 10% 20%;
 
 	background-color: rgb(20, 20, 20);
 }
@@ -310,13 +315,14 @@ p{
 @media (max-width:720px) {
 	.gc{
 		text-align: center;
+		padding: 10%;
 	}
 }
 
 /* HOW IT WORKS */
 .how-it-works{
 	width: 100%;
-	padding: 10%;
+	padding: 10% 20%;
 	background-color: white;
 }
 .how-it-works h1{
@@ -348,6 +354,7 @@ p{
 @media (max-width:720px) {
 	.how-it-works{
 		text-align: center;
+		padding: 10%;
 	}
 	.how-it-works-schema{
 		flex-direction: column;
@@ -365,7 +372,7 @@ p{
 .compatibility{
 	width: 100%;
 
-	padding: 10%;
+	padding: 10% 20%;
 
 	background-color: rgb(20, 20, 20);
 }
@@ -379,5 +386,6 @@ p{
 @media (max-width:720px) {
 	.compatibility{
 		text-align: center;
+		padding: 10%;
 	}
 }
